@@ -260,16 +260,4 @@ class Dealer {
         }
     }
 
-
-    /**
-     * get_dealer_deals(int $id_dealer)
-     *
-     * @param integer $id_dealer
-     * @return array
-     */
-    public function get_dealer_deals(int $id_dealer) : array
-    {
-
-    }
-
 }
