@@ -16,6 +16,157 @@
 
 </head>
 
+
+<style>
+	/*********************************
+	6.1 Deals
+	*********************************/ 
+	.deals_featured
+	{ 
+		width: 100%;
+	} 
+	.deals
+	{
+		width: 40%; 
+		margin-right: 0%;
+		padding-top: 85px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 35px;
+		box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+		border-radius: 5px;
+	}
+
+	.top_bar
+	{
+		width: 100%;
+		height: 40px;
+		background: #fafafa;
+		border-bottom: solid 1px rgba(0,0,0,0.05);
+		z-index: 2;
+	}
+
+	.top_bar_contact_item,
+	.top_bar_contact_item a,
+	.standard_dropdown li a,
+	.top_bar_user a
+	{ 
+		line-height: 40px; 
+	}
+
+	.top_bar_contact_item, 
+	.top_bar_contact_item a, 
+	.standard_dropdown li li a, 
+	.standard_dropdown li a,
+	.top_bar_user a
+	{
+		font-size: 14px;
+	}
+	 
+
+
+	 /******************************
+
+	[Table of Contents]
+
+	1. 1600px
+	2. 1440px
+	3. 1280px
+	4. 1199px
+	5. 1024px
+	6. 991px
+	7. 959px
+	8. 880px
+	9. 768px
+	10. 767px
+	11. 539px
+	12. 479px
+	13. 400px
+
+	******************************/
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+
+	.deals_timer_box
+	{
+		width: 150px;
+	}
+	.deals_timer_unit
+	{
+		font-size: 20px;
+	}
+}
+
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	.deals
+	{
+		margin-right: 0%;
+		width: 70%;
+	}
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+	.deals
+	{
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+
+
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	.deals
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.deals_title
+	{
+		left: 15px;
+		font-size: 16px;
+	}
+	.deals_slider_nav_container
+	{
+		right: 5px;
+	}
+	.deals_item_name, .deals_item_price
+	{
+		font-size: 20px;
+	}
+	.deals_item_category a, .deals_item_price_a
+	{
+		font-size: 12px;
+	}
+	.deals_timer_unit
+	{
+		font-size: 16px;
+	}
+}
+
+</style>
+
 <body>
 
 <div class="super_container">
@@ -126,12 +277,16 @@
 								<!-- <label for="exampleInputEmail1">Email address</label> -->
 								<div class="d-flex flex-nowrap bd-highlight">
 									<div class="order-2 p-2 bd-highlight">
-										<input type="radio" name="devise_dollar" id="devise">
+										<input type="radio" name="devise" value="dollar" id="devise">
 										<label for="exampleInputEmail1">En dollar</label> 
 									</div> 
 									<div class="order-3 p-2 bd-highlight">
-										<input type="radio" name="devise_franc" id="devise">
+										<input type="radio" name="devise" value="franc" id="devise">
 										<label for="exampleInputEmail1">En franc</label> 
+									</div> 
+									<div class="order-3 p-2 bd-highlight">
+										<input type="radio" name="devise" value="euro" id="devise">
+										<label for="exampleInputEmail1">En Euro</label> 
 									</div>
 									
 								</div>

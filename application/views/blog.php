@@ -14,6 +14,8 @@
 <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
 
+
+
 </head>
 
 <body>

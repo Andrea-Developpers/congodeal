@@ -11,6 +11,33 @@
 <link rel="stylesheet" type="text/css" href="<?=base_url('assets/styles/contact_styles.css');?>">
 <link rel="stylesheet" type="text/css" href="<?=base_url('assets/styles/contact_responsive.css');?>">
 <style>
+	
+	.top_bar
+	{
+		width: 100%;
+		height: 40px;
+		background: #fafafa;
+		border-bottom: solid 1px rgba(0,0,0,0.05);
+		z-index: 2;
+	}
+
+	.top_bar_contact_item,
+	.top_bar_contact_item a,
+	.standard_dropdown li a,
+	.top_bar_user a
+	{ 
+		line-height: 40px; 
+	}
+
+	.top_bar_contact_item, 
+	.top_bar_contact_item a, 
+	.standard_dropdown li li a, 
+	.standard_dropdown li a,
+	.top_bar_user a
+	{
+		font-size: 14px;
+	}
+	 
 	.form-control {
 		border : 1px solid #D0D0D0;
 	}

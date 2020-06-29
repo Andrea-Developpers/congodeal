@@ -207,8 +207,19 @@
 							</div>
 							<div class="top_bar_user">
 								<div class="user_icon"><img src="<?=base_url('assets/images/user.svg');?>" alt=""></div>
-								<div><a href="<?=site_url('dealer')?>">S'inscrire</a></div>
-								<div><a href="<?=site_url('home/login')?>">Se connecter</a></div>  
+								<?php 
+
+									if(isset($_SESSION['name']) && isset($_SESSION['id']) )
+									{
+										echo '
+											<div><a href="'.site_url('dealer/show_dealer/' . isset($_SESSION['id']) ).'">'.$_SESSION['name'].'</a></div>
+											<div><a href="'.site_url('dealer').'">Se déconnecter</a></div>
+											';
+									}
+								
+								?>
+								<div><a href="<?=site_url('dealer/register')?>">S'inscrire</a></div>
+								<div><a href="<?=site_url('dealer/login')?>">Se connecter</a></div>  
 							</div>
 						</div>
 					</div>
@@ -279,8 +290,24 @@
 
 
 			<?php 
+
+				$images = array(
+					'assets/try/view_5.jpg',
+					'assets/try/view_6.jpg',
+					'assets/try/view_4.jpg',
+					'assets/try/view_3.jpg',
+					'assets/try/review_2.jpg',
+					'assets/try/single_1.jpg',
+					'assets/try/new_6.jpg',
+					'assets/try/blog_5.jpg',
+					'assets/try/best_1.jpg',
+					'assets/try/adv_1.jpg', 
+					'assets/try/vestes.PNG',
+				);
+
+				$n = count($images);
 			
-				for ($i=0; $i < 10; $i++) { 
+				for ($i=0; $i < $n; $i++) { 
 					echo
 					'
 
@@ -298,7 +325,7 @@
 									<div class="owl-carousel owl-theme deals_slider">
 										<!-- Deals Item -->
 										<div class="owl-item deals_item">
-											<div class="deals_image"><img src="'.base_url('assets/images/deals.png').'" alt=""></div>
+											<div class="deals_image"><img src="'.base_url($images[$i]).'" alt=""></div>
 											<div class="deals_content">
 												<div class="deals_info_line d-flex flex-row justify-content-start">
 													<div class="deals_item_category"><a href="#">Headphones</a></div>
@@ -336,7 +363,11 @@
 															</div>
 														</div>
 													</div>
+													
 												</div>
+											</div>
+											<div class="mt-3">
+												<a href="#" class="btn btn-sm btn-block btn-primary text-muted" style="background:#fafafa; border-color:#d0d0d0;">Voir l\'article</a>
 											</div>
 										</div>
 		
@@ -381,6 +412,9 @@
 														</div>
 													</div>
 												</div>
+											</div>
+											<div class="mt-3">
+												<a href="#" class="btn btn-sm btn-block btn-primary text-muted" style="background:#fafafa; border-color:#d0d0d0;">Voir l\'article</a>
 											</div>
 										</div>
 		
@@ -427,7 +461,10 @@
 												</div>
 											</div>
 										</div>
-									</div>
+										<div class="mt-3">
+											<a href="#" class="btn btn-sm btn-block btn-primary text-muted" style="background:#fafafa; border-color:#d0d0d0;">Voir l\'article</a>
+										</div>
+									</div> 
 								</div>
 		
 								<div class="deals_slider_nav_container">
