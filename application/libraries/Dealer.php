@@ -20,6 +20,8 @@ class Dealer {
      *
      */
 
+     
+
 
      /**
       * $params
@@ -260,4 +262,35 @@ class Dealer {
         }
     }
 
+    /**
+     * get_dealer_infos(int $id_user)
+     * 
+     * Retourne toutes les informations sur un dealer notament :
+     * 1. Ses informations personnelles,
+     * 2. Ses deals...
+     *
+     * @param integer $id_user
+     * @return array
+     */
+    public function get_dealer_infos(int $id_user) : array
+    {
+        $dealer_infos = array(
+            'dealer' => array(),
+            'deals' => array()
+        );
+
+        $dealer = $this->UserModel->get_user_where_id($id_user);
+        
+        # Si l'utilisateur est trouvé dans la base de données
+        if($dealer != NULL || ! empty($dealer))
+        {
+            # On retourne un tableau associatif comprenant
+            # l'utilisateur et ses infos 
+            return $dealer;
+        }
+        else 
+        {
+            return array();
+        }
+    }
 }

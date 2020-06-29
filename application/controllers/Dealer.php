@@ -18,6 +18,11 @@ class Dealer extends CI_Controller {
 		$this->load->view('dealer/register');
 	}
 
+	public function profile()
+	{
+		$this->load->view('dealer/profile');
+	}
+
 	public function product() 
 	{
 		$this->load->view('dealer/product');

@@ -129,13 +129,14 @@
 								<!-- <label for="exampleInputPassword1">Password</label> -->
 								<input type="password" class="form-control form-control-sm rounded-0" id="exampleInputPassword1" placeholder="Mot de passe">
 							</div>
-							<div class="form-group">
+							<!-- Pour le moment, pas de Google et de Facebook API Integrated -->
+							<!-- <div class="form-group">
 								<div class="d-flex flex-column bd-highlight mb-3">
 								<button type="button" class="btn btn-primary btn-sm btn-block">Google</button>
 								<button type="button" class="btn btn-secondary btn-sm btn-block">Facebook</button>
 								</div>
-							</div>
-							<button type="submit" class="btn btn-sm  text-light btn-primary">Se connecter</button>
+							</div> -->
+							<button type="submit" class="btn btn-sm btn-block text-light btn-primary">Se connecter</button>
 						</form>
 
 
