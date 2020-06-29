@@ -26,7 +26,7 @@
 	} 
 	.deals
 	{
-		width: 40%; 
+		width: 50%; 
 		margin-right: 0%;
 		padding-top: 85px;
 		padding-left: 50px;
@@ -280,34 +280,21 @@
 		</div>
 		 
 	</header>
-	
-	 
+
+														
 	<!-- Deals of the week -->
 
 	<div class="deals_featured">
 		<div class="container">
-
-
-
-			<?php 
-
+			<div class="row">
+				<div class="col-lg-9">
+				<?php 
+				#Juste un exemple de ce que ça doit être
 				$images = array(
-					'assets/try/view_5.jpg',
-					'assets/try/view_6.jpg',
-					'assets/try/view_4.jpg',
-					'assets/try/view_3.jpg',
-					'assets/try/review_2.jpg',
-					'assets/try/single_1.jpg',
-					'assets/try/new_6.jpg',
-					'assets/try/blog_5.jpg',
-					'assets/try/best_1.jpg',
-					'assets/try/adv_1.jpg', 
-					'assets/try/vestes.PNG',
+					'assets/images/deals.png'
 				);
-
-				$n = count($images);
-			
-				for ($i=0; $i < $n; $i++) { 
+ 
+				for ($i=0; $i < 15; $i++) { 
 					echo
 					'
 
@@ -325,7 +312,7 @@
 									<div class="owl-carousel owl-theme deals_slider">
 										<!-- Deals Item -->
 										<div class="owl-item deals_item">
-											<div class="deals_image"><img src="'.base_url($images[$i]).'" alt=""></div>
+											<div class="deals_image"><img src="'.base_url($images[0]).'" alt=""></div>
 											<div class="deals_content">
 												<div class="deals_info_line d-flex flex-row justify-content-start">
 													<div class="deals_item_category"><a href="#">Headphones</a></div>
@@ -367,7 +354,7 @@
 												</div>
 											</div>
 											<div class="mt-3">
-												<a href="#" class="btn btn-sm btn-block btn-primary text-muted" style="background:#fafafa; border-color:#d0d0d0;">Voir l\'article</a>
+												<a href="#" class="btn btn-sm btn-block btn-primary text-muted" style="background:#fafafa; border-color:#d0d0d0;" data-toggle="modal" data-target=".bd-example-modal-lg">Voir l\'article</a>
 											</div>
 										</div>
 		
@@ -482,16 +469,35 @@
 						</div>
 					</div>
 					<!-- Row -->
+
+
+
+					
 		
 					';
 				}
 			
 			?>
 
+				</div>
+				<div class="col-lg-3">
+				
+				</div>				
+			</div>
+			
 			
 		</div>
 	</div>
 
+ 
+
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			...
+			</div>
+		</div>
+		</div>
 
 
 	<!-- Deals of the week --> 

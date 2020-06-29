@@ -1,53 +1,30 @@
-###################
-What is CodeIgniter
-###################
+##########
+CONGO DEAL 
+##########
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+***********
+Description
+***********
+Un site internet de deal en ligne ayant pour objectif de faire 
+vendre au utilisateur plus rapidement leurs produits.
 
-*******************
-Release Information
-*******************
+***************
+Fonctionnalités
+***************
+Le site internet doit avoir des fonctionnalités telles que :
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+    - `1. Inscrire un utilisateur en tant que dealer`
+    - `2. Permettre au dealer d'exposer sa marchandise, son prix, son lieu de vente, le stock,
+        le delai accordé et une description du produit qu'il vendre`
+    - `3. Permettre au dealer de créer une boutique personnelle dans laquelle
+        les acheteurs peuvent venir consulter et acheter les produits qu'il propose`
+    - `4. Envoyer des notifications au dealer lorsqu'une des ses marchandises est sollicitée`
+    - `5. Permettre à l'utilisateur de spécifier la catégorie de la marchandise qu'il propose`
+    - `6. Permettre au dealer de fixer un lieu et une date et une heure de rendez-vous pour écouler ses marchandises`
+    - `7. Donner la possibilité aux dealers de voir la liste de autres dealers de la région
+        ou d'un lieu précis et selon leur catégorie`
 
-**************************
-Changelog and New Features
-**************************
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
 
 *********
 Resources
@@ -59,12 +36,3 @@ Resources
 -  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
 -  `Community Slack Channel <https://codeigniterchat.slack.com>`_
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
