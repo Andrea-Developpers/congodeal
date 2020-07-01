@@ -16,15 +16,15 @@ class Useful {
     }
 
     /**
-     * cast_db_result_to_array($db_result)
+     * cast_object_result_to_array($db_result)
      * 
-     * Une fonction qui permet de convertir les objects CI_DB_mysqli_result Object
+     * Une fonction qui permet de convertir les variables de type Object
      * en un tableau
      *
      * @param CI_DB_mysqli_result Object $db_result
      * @return array
      */
-    public function cast_db_result_to_array($db_data) : array 
+    public function cast_object_result_to_array($db_data) : array 
     {
         # Un tableau vide qui va stocker les résultats
         $arr = array();
@@ -48,6 +48,33 @@ class Useful {
             return $arr;
         }
         
+    }
+
+
+    /**
+     * already_exist($value, array $arr)
+     *
+     * @param [type] $value
+     * @param [type] $arr
+     * @return boolean
+     */
+    public function already_exist($value, $arr) : bool
+    {
+        $arr_items = array();
+        if( ! is_object($arr))
+        {
+            $arr_items = $this->cast_object_result_to_array($arr);
+        }
+        
+        if(in_array($value, $arr_items))
+        {
+            return TRUE;
+        } 
+        else 
+        {
+            return FALSE;
+        }
+
     }
  
 

@@ -293,4 +293,16 @@ class Dealer {
             return array();
         }
     }
+
+    /**
+     * pick_dealer(string $email_dealer, array $arr)
+     *
+     * @param string $email_dealer
+     * @param array $arr
+     * @return array
+     */
+    public function pick_dealer(string $email_dealer, array $arr) : array
+    {
+        
+    }
 }
